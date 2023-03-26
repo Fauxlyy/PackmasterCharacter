@@ -25,6 +25,8 @@ public class DicePower extends AbstractPackmasterPower {
     public static final String NAME = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).NAME;
     public static final String[] DESCRIPTIONS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).DESCRIPTIONS;
 
+    public static int diceRolledThisCombat = 0;
+
     public List<Integer> dice = new ArrayList<>();
     public boolean sound;
 
@@ -33,6 +35,7 @@ public class DicePower extends AbstractPackmasterPower {
         this.sound = sound;
         dice.add(sides);
         amount =  roll(sides);
+        diceRolledThisCombat += amount;
         updateDescription();
     }
 
@@ -84,6 +87,8 @@ public class DicePower extends AbstractPackmasterPower {
         if(owner.hasPower(BurningPassionPower.POWER_ID) && owner.getPower(BurningPassionPower.POWER_ID).amount > 0)
             multiplier = owner.getPower(BurningPassionPower.POWER_ID).amount;
         this.amount += roll(amount) * multiplier;
+        this.diceRolledThisCombat += roll(amount) * multiplier;
+
         updateDescription();
     }
 

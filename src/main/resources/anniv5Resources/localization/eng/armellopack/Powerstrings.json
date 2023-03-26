@@ -1,0 +1,18 @@
+{
+  "${ModID}:WyldBornPower": {
+    "NAME": "Wyld Born",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b1 #yChannel into your hand.",
+      "At the start of your turn, add #b",
+      " #yChannels into your hand."
+    ]
+  },
+  "${ModID}:BardPower": {
+    "NAME": "Bard",
+    "DESCRIPTIONS": [
+      "Every #b",
+      " cards #yExhausted, gain #yInspiration #b",
+      "."
+    ]
+  }
+}

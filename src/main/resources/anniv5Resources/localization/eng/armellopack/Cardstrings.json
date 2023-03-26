@@ -1,0 +1,56 @@
+{
+  "${ModID}:WyldBorn": {
+    "NAME": "Wyld Born",
+    "DESCRIPTION": "At the start of each turn, add a *Channel to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn, add a *Channel to your hand."
+  },
+  "${ModID}:Bard": {
+    "NAME": "Bard",
+    "DESCRIPTION": "Every !M! cards *Exhausted, gain ${ModID}:Inspiration !${ModID}:m2!."
+  },
+  "${ModID}:CursedLands": {
+    "NAME": "Cursed Lands",
+    "DESCRIPTION": "Draw !M! cards. NL They are ${ModID}:Perilous this turn."
+  },
+  "${ModID}:GrandHeist": {
+    "NAME": "Grand Heist",
+    "DESCRIPTION": "Roll a *D8. NL Add a *Spirit *Stone to your hand.",
+    "UPGRADE_DESCRIPTION": "Roll a *D8. NL Add !M! *Spirit *Stones to your hand."
+  },
+  "${ModID}:StoneWards": {
+    "NAME": "Stone Wards",
+    "DESCRIPTION": "*Magic. NL Add X *Spirit *Stones to your hand. NL Refund !M!."
+  },
+  "${ModID}:ShimmerShield": {
+    "NAME": "Shimmer Shield",
+    "DESCRIPTION": "*Magic. NL Gain !B! Block. NL Roll a *D8."
+  },
+  "${ModID}:SpiritStrike": {
+    "NAME": "Spirit Strike",
+    "DESCRIPTION": "*Magic. NL Deal !D! damage and gain !B! Block X times. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [" NL (Hits !M! extra time{!M!|1=|@=s}.)"]
+  },
+  "${ModID}:MaliceRising": {
+    "NAME": "Malice Rising",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL !M! cards in your discard pile become ${ModID}:Perilous."
+  },
+  "${ModID}:RiteOfWyld": {
+    "NAME": "Rite of Wyld",
+    "DESCRIPTION": "*Magic. NL Deal !D! damage. NL Deals !M! additional damage for each *Magic card played this combat."
+  },
+  "${ModID}:GameOfThorns": {
+    "NAME": "Game of Thorns",
+    "DESCRIPTION": "Deal damage equal to total ${ModID}:Dice rolled this combat to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Unnate. NL Deal damage equal to total ${ModID}:Dice rolled this combat to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [" NL (Deals !D! damage.)"]
+  },
+  "${ModID}:SpiritStone": {
+    "NAME": "Spirit Stone",
+    "DESCRIPTION": "*Magic. Retain. NL Roll a *D8. NL When 4 *Spirit *Stones are in hand, add a *Spirit *Walker into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "*Magic. Retain. NL Roll a *D12. NL When 4 *Spirit *Stones are in hand, add a *Spirit *Walker into your hand. NL Exhaust."
+  },
+  "${ModID}:SpiritWalker": {
+    "NAME": "Spirit Walker",
+    "DESCRIPTION": "*Magic. Retain. NL Double ${ModID}:Dice value. NL While in hand, *Spirit *Stones play themselves."
+  }
+}
