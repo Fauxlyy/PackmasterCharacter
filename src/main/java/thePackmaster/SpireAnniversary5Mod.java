@@ -77,6 +77,7 @@ import thePackmaster.potions.clawpack.ClawPowerPotion;
 import thePackmaster.potions.clawpack.DrawClawsPotion;
 import thePackmaster.potions.clawpack.GenerateClawsPotion;
 import thePackmaster.potions.thieverypack.DivinePotion;
+import thePackmaster.powers.boardgamepack.DicePower;
 import thePackmaster.powers.dragonwrathpack.PenancePower;
 import thePackmaster.powers.evenoddpack.GammaWardPower;
 import thePackmaster.powers.evenoddpack.PrimeDirectivePower;
@@ -813,6 +814,7 @@ public class SpireAnniversary5Mod implements
         MindControlledPower.targetRng = new Random(Settings.seed + AbstractDungeon.floorNum);
         EnergyAndEchoPack.resetvalues();
         EnergyCountPatch.energySpentThisCombat = 0;
+        DicePower.diceRolledThisCombat = 0;
         DisableCountingStartOfTurnDrawPatch.DRAWN_DURING_TURN = false;
         JediUtil.receiveOnBattleStart(room);
     }

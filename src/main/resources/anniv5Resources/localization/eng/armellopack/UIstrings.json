@@ -1,0 +1,20 @@
+{
+  "${ModID}:ArmelloPack": {
+    "TEXT": [
+      "Armello",
+      "Dice and Magic cards from a faraway land",
+      "Fauxly"
+    ]
+  },
+  "${ModID}:ArmelloPackHat": {
+    "TEXT": [
+      "The rightful king.",
+      "Crown of Armello"
+    ]
+  },
+  "${ModID}:PerilousModifier": {
+    "TEXT": [
+      " NL ${ModID}:Perilous."
+    ]
+  }
+}
