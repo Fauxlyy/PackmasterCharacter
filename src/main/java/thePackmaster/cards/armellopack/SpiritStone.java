@@ -30,13 +30,12 @@ public class SpiritStone extends AbstractArmelloCard {
         tags.add(MAGIC);
     }
 
-    @Override
-    public void triggerWhenCopied() {
+    public void checkSpiritStones() {
         long stonesInHand = hand().group.stream()
                 .filter(c -> c.cardID == ID)
                 .count();
 
-        if (stonesInHand == 4) {
+        if (stonesInHand >= 4 && hand().findCardById(SpiritWalker.ID) == null) {
             att(new AbstractGameAction() {
                 @Override
                 public void update() {
@@ -61,6 +60,16 @@ public class SpiritStone extends AbstractArmelloCard {
                 }
             });
         }
+    }
+
+    @Override
+    public void triggerWhenCopied() {
+        checkSpiritStones();
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        checkSpiritStones();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

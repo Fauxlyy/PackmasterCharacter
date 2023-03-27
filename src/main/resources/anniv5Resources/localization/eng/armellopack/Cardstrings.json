@@ -40,8 +40,8 @@
   },
   "${ModID}:GameOfThorns": {
     "NAME": "Game of Thorns",
-    "DESCRIPTION": "Deal damage equal to total ${ModID}:Dice rolled this combat to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "${ModID}:Unnate. NL Deal damage equal to total ${ModID}:Dice rolled this combat to ALL enemies.",
+    "DESCRIPTION": "Deal damage equal to total of ${ModID}:Dice sides rolled this combat.",
+    "UPGRADE_DESCRIPTION": "NL Deal damage equal to total of ${ModID}:Dice sides rolled this combat to ALL enemies.",
     "EXTENDED_DESCRIPTION": [" NL (Deals !D! damage.)"]
   },
   "${ModID}:SpiritStone": {

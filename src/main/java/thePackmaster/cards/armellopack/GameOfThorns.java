@@ -50,10 +50,15 @@ public class GameOfThorns extends AbstractArmelloCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.baseDamage = DicePower.diceRolledThisCombat;
         this.calculateCardDamage(null);
-        allDmgTop(AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
+        if (upgraded) {
+            allDmgTop(AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
+        } else {
+            allDmg(AbstractGameAction.AttackEffect.SLASH_VERTICAL);
+        }
+
     }
 
     public void upp() {
-        this.isUnnate = true;
+        this.target = CardTarget.ALL_ENEMY;
     }
 }

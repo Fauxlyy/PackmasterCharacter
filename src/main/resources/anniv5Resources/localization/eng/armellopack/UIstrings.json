@@ -2,7 +2,7 @@
   "${ModID}:ArmelloPack": {
     "TEXT": [
       "Armello",
-      "Dice and Magic cards from a faraway land",
+      "*Dice and *Magic cards from a faraway land",
       "Fauxly"
     ]
   },

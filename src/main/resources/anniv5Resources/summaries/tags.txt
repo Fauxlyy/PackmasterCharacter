@@ -4,7 +4,7 @@ AlignmentPack	Exhaust,Discard
 AllForOnePack	None
 AnomalyPack	Exhaust,Discard
 ArcanaPack	None
-ArmelloPack Magic,Exhaust,Tokens
+ArmelloPack	Magic,Exhaust,Tokens
 BardInspirePack	None
 BasicsPack	None
 BatterPack	Attacks
